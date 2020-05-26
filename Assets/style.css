@@ -1,0 +1,61 @@
+nav {
+    height: 60px;
+    background-color: #ee6e73;
+} 
+
+div {
+    border: #ee6e73; 
+  }
+  
+  ul{ 
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .col { 
+    padding: 5px;
+  }
+  
+  .card {
+    width: 35%;
+    background-color: #ececec;
+    min-height: 200px;
+  }
+  
+  .forecast-card {
+    background-color: #ee6e73;
+    width: 140px; 
+  }
+  
+  .search-section {
+    height: 100%;
+    margin: 10px;
+  }
+  
+  .cityList {
+    border: solid;
+    border-width: thin;
+    margin: 5px;
+    padding-left: 2px;
+    background-color: ghostwhite;
+  }
+  
+  .cityList:hover {
+    background-color: #ee6e73;
+    padding-inline-start: 20px;
+    color: #fff;
+  }
+  
+  .container {
+    margin-top: 10px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ee6e73;
+    color: white;
+    text-align: center;
+  }

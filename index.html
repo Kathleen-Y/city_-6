@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="Assets/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+    integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <!--for tab icon in website-->
+  <link rel="icon" href="https://img.icons8.com/material/24/000000/smiling-sun.png" />
+  <title>Weather API</title>
+</head>
+
+<body>
+  <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+    <span class="brand-logo center">Weather Dashboard</span>
+  </nav>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-3'>
+        <div class='card search-section'>
+          <div class='card-body'>
+            <label>Search For a City:</label>
+            <div class="input-group mb-3">
+              <input id="city-search" type="text" class="form-control">
+              <div class="input-group-append">
+                <button id='getWeather' class="btn btn-primary" type="submit">
+                  <i id='getWeatherIcon' class="fas fa-search" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id='past-cities'></div>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-9'>
+        <div class='row'>
+          <div class='card'>
+            <div class='card-body'>
+              <h5 class='card-title' id='cityName'>City</h5>
+              <ul>
+                <li><img id='curWeathIcn'></img></li>
+                <li class='card-text' id='curTemp'>Temp:</li>
+                <li class='card-text' id='curHum'>Humidity:</li>
+                <li class='card-text' id='curWind'>Windspeed:</li>
+                <li class='card-text' id='curUv'>UV Index:</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <h2 class='card-title'>5-Day Forcast</h2>
+        </div>
+        <div class='row' id='forecast'></div>
+      </div>
+    </div>
+    <!--for the authentication/making the bottom of the page complete-->
+<footer class="footer">
+  <div class="container">
+    <span>Copyright &copy 2020</span>
+  </div>
+</footer>
+    <!--js at the end of body for opt loading-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='Assets/script.js'></script>
+</body>
+
+</html>
