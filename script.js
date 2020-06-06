@@ -2,7 +2,7 @@ $(document).ready(function () {
   let test = false;
 
   const apiKey = "3d9efbfbf46372a4ff1a6d074b5ed18c";
-  let url = 'https://api.openweathermap.org/data/2.5/';
+  let url = 'https://api.openweathermap.org/data/2.5/forecast?q=';
   let requestType = "";
   let query = "";
 
@@ -157,7 +157,6 @@ $(document).ready(function () {
 
         weatherArr.push(weatherObj);
       }
-
       drawForecast(weatherArr);
     });
   };
@@ -183,7 +182,6 @@ $(document).ready(function () {
       let $cardBody = $('<div class="card-body forecast-card">');
       let $cardTitle = $('<h5 class="card-title">');
       $cardTitle.text(cur[i].date);
-
 
       let $ul = $('<ul>');
       let $iconLi = $('<li>');
