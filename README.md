@@ -18,4 +18,3 @@ SO THAT I can plan a trip accordingly
 ## Contact
 * Homepage: [@profile](https://github.com/Kathleen-Y)
 * Twitter: [@Ros3p3tal](https://twitter.com/Ros3p3tal)
-
