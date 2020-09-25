@@ -1,78 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <link rel="stylesheet" href="Assets/style.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
-    integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
-    crossorigin="anonymous"></script>
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <!--for tab icon in website-->
-  <link rel="icon" href="https://img.icons8.com/material/24/000000/smiling-sun.png" />
-  <title>Weather API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
 
 <body>
-  <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-    <span class="brand-logo center">Weather Dashboard</span>
-  </nav>
-
-  <div class='container'>
-    <div class='row'>
-      <div class='col-md-3'>
-        <div class='card search-section'>
-          <div class='card-body'>
-            <label>Search For a City:</label>
-            <div class="input-group mb-3">
-              <input id="city-search" type="text" class="form-control">
-              <div class="input-group-append">
-                <button id='getWeather' class="btn btn-primary" type="submit">
-                  <i id='getWeatherIcon' class="fas fa-search" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-
-            <div id='past-cities'></div>
-          </div>
+    <!-- Header top of the page -->
+    <div class="grid">
+        <div class="header">
+            <h1>Plan your day with the guide of the weather</h1>
         </div>
-      </div>
-      <div class='col-md-9'>
-        <div class='row'>
-          <div class='card'>
-            <div class='card-body'>
-              <h5 class='card-title' id='cityName'>City</h5>
-              <ul>
-                <li><img id='curWeathIcn'></img></li>
-                <li class='card-text' id='curTemp'>Temp:</li>
-                <li class='card-text' id='curHum'>Humidity:</li>
-                <li class='card-text' id='curWind'>Windspeed:</li>
-                <li class='card-text' id='curUv'>UV Index:</li>
-              </ul>
-            </div>
-          </div>
+        <div class="sidebar">
+            <form class="sidesearch" action="">
+                <input type="text" placeholder="Search the cities" name="search">
+                <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <br>
         </div>
-        <div class='row'>
-          <h2 class='card-title'>5-Day Forcast</h2>
+        <div class="main">
+            <h3 id="city"></h3>
+            <div id="temp"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+            <div id="UVIindex"></div>
         </div>
-        <div class='row' id='forecast'></div>
-      </div>
+        <div class="card-1">
+            <p id="day-1"></p>
+            <p id="icon-1"></p>
+            <p id="temp-1"></p>
+            <p id="humidity-1"></p>
+        </div>
+        <div class="card-2">
+            <p id="day-2"></p>
+            <p id="icon-2"></p>
+            <p id="temp-2"></p>
+            <p id="humidity-2"></p>
+        </div>
+        <div class="card-3">
+            <p id="day-3"></p>
+            <p id="icon-3"></p>
+            <p id="temp-3"></p>
+            <p id="humidity-3"></p>
+        </div>
+        <div class="card-4">
+            <p id="day-4"></p>
+            <p id="icon-4"></p>
+            <p id="temp-4"></p>
+            <p id="humidity-4"></p>
+        </div>
+        <div class="card-5">
+            <p id="day-5"></p>
+            <p id="icon-5"></p>
+            <p id="temp-5"></p>
+            <p id="humidity-5"></p>
+        </div>
     </div>
-    <!--for the authentication/making the bottom of the page complete-->
-<footer class="footer">
-  <div class="container">
-    <span>Copyright &copy 2020</span>
-  </div>
-</footer>
-    <!--js at the end of body for opt loading-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='script.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="./Js/Script.js"></script>
 </body>
 
 </html>
