@@ -14,6 +14,5 @@ SO THAT I can plan a trip accordingly
 * JavaScript
 
 ## Contact
-* Email: [email](mailto:k.yoannon@gmail.com) 
 * Homepage: [@profile](https://github.com/Kathleen-Y)
 * Twitter: [@Ros3p3tal](https://twitter.com/Ros3p3tal)
