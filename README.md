@@ -1,6 +1,6 @@
 # Weather Dashboard
 ![Github](https://img.shields.io/badge/weather-dashboard-181717?style=social&logo=mySQL)
-
+![GitHub repo size](https://img.shields.io/github/repo-size/Kathleen-Y/city_-6?logo=github)
 
 ```
 AS A traveler
@@ -12,6 +12,7 @@ SO THAT I can plan a trip accordingly
 * HTML
 * CSS
 * JavaScript
+* API
 
 ## Contact
 * Homepage: [@profile](https://github.com/Kathleen-Y)
